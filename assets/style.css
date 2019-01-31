@@ -1,0 +1,23 @@
+.jumbotron{
+    background-color: #555B6E;
+}
+
+H1{
+    color: #FAF9F9;
+    font-size: 38x;
+    font-weight: 900;
+}
+
+.lead{
+    color: #FAF9F9;
+}
+container2{
+    color: #FAF9F9;
+}
+.row1{
+    border-bottom-color: black
+}
+.card-header{
+    background-color: #89B0AE;
+    font-weight: 700;
+}
