@@ -9,7 +9,7 @@ The site is deployed at  https://sonjarasmussen.github.io/Train_Schedule/
 You can use this to see the trains that are already set up in Firebase. You can enter new train information below the Current Train Schedule, in the Add New Train Information card. Once you enter the information and submit, it will add the new train to the Current Train Schedule.
 
 
-Built With Bootstrap - To do basic css 
+Built With Bootstrap - To do basic css and responsive layout
 Firebase - to store train name, train frequency and train start time 
 Moment.js - This pulls the data from Firebase and manipulates the data to give next train arrival time and minutes away
 TimePicker library for ease of use and ensure correct format of the time.
