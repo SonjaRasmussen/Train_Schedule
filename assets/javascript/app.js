@@ -14,7 +14,6 @@
 
     // A variable to reference the database.
     var trainData = firebase.database();
-    $('#time').timepicker();
     $("#train-time").timepicker();
     
     $("#submit-train").on("click", function() {
@@ -40,7 +39,7 @@
         trainData.ref().push(newTrain); 
             
        
-        alert("Train Added!");
+       //clear input fields after submit
     
         $("#train-name").val("");
         $("#destination").val("");
@@ -52,15 +51,7 @@
         return false;
 })
 
-//When you click on the remove buttons, it gets the row it's on and deletes it from the database
-$(document.body).on('click', '.remove', function(){
 
-    var num = $(this).attr('data-indexNum');
-    fb.child(trainIDs[num]).remove();
-
-    //Must reload to show the database changes on the page
-    location.reload();
-});
 
 
 
@@ -85,5 +76,6 @@ $(document.body).on('click', '.remove', function(){
         
     //use jquery to update the HTML new trains
     $("#trainTable > tBody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + arrival + "</td><td>" + minutes + "</td></tr>");
+
 });
 });
